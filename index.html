@@ -1,8 +1,322 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-<body>
-<h1> Welcome!</h1>
-<p> This page is under construction.</p>
+<title>Homepage Index</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- -->
+<style>
+    /* body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif} */
+    body {
+        font-family: 'Ubuntu Mono', monospace;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    table.skills {
+        border-collapse: collapse;
+        border: 3px;
+        table-layout: fixed;
+        width: 100%;
+        text-align: center;
+    }
+
+    th {
+        font-size: 28px;
+        font-style: bold;
+        width: 50%;
+    }
+
+    td {
+        font-size: 18px;
+        border: 3px;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+</style>
+
+<body class="violet4">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center violet1">
+        <!-- Avatar image in top left corner -->
+        <img src="images/Portrait.JPG" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large violet4-hover">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>Home</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large violet4-hover">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>About</p>
+        </a>
+        <a href="#projects" class="w3-bar-item w3-button w3-padding-large violet4-hover">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>Projekte</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large violet4-hover">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>Kontakt</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar violet1 w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About</a>
+            <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">Projekte</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Kontakt</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center" id="home">
+
+            <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Annemarie Brekow</h1>
+            <img src="images/Portrait.JPG" alt="boy" class="w3-image" width="35%" height="35%">
+            <p><h3>Gamedesignerin und Programmiererin</h3></p>
+        </header>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">Über mich</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p>
+                Ich finde es meistens wirklich schwierig etwas über mich zu erzählen, ohne dass es nach einem runtergebeteten Lebenslauf klingt. Deswegen hier einfach
+                ein paar Fakten über mich: <br>
+                <br>
+                Im Juni 1990 wurde ich in Belzig, Brandenburg geboren, bin in Brandenburg/Havel aufgewachsen und erst zum Studium weggezogen. Mein Abitur habe
+                ich an einer Gesamtschule in Ziesar abgelegt. Danach wollte ich mein Hobby zum Beruf machen und bin Konditorin geworden. Doch ich hab schnell gemerkt,
+                dass mich dieser Beruf nicht ausfüllt und so habe ich mich an der Uni eingeschrieben, um erstmal mehr Erfahrung und Wissen zu sammeln. <br>
+                <br>
+                Auf der Uni habe ich etwas über Geologie, Ökologie, Pädagogik, Psychologie und viel über Medien gelernt. In meinen außeruniversitären Aktivitäten war
+                ich Teil eines Formula Student Teams und in zwei Studentenclubs aktiv, wo ich viel Kontakt mit anderen Menschen und Studenten verschiedener Studiengänge hatte,
+                außendem habe ich mich persönlich weiterentwickelt. <br>
+                <br>
+                Dort habe ich Plakate und Flyer erstellt und auch viel Zeit mit Informatikstudenten verbracht und gemerkt, dass mich Programmieren interessiert. Dann
+                habe ich angefangen mich umzusehen, wie ich dieses Interesse in meinem künftigen Beruf nutzen will und habe mich dann, für eine Ausbildung zur
+                3D-/Gamedesignerin entschieden. <br>
+                <br>
+                Ich finde es unglaublich spannend, welche Magie man mit Worten bewirken kann und wie aus einem "Text" z.B. ein sich bewegender Charakter wird. Auch wie man mit Spielen
+                Menschen stundenlang binden und sie faszinieren kann. Das ist das, was ich mir vorstelle und wünsche, jeden Tag zu machen.
+            </p>
+            <br><br><br>
+            <h3 class="w3-padding-16 w3-text-light-grey">Meine Skills</h3>
+            <table>
+                <tr><th align="center">Programmieren</th></tr>
+                <tr><td align="center"><br><br><img src="images/brackets.png"><br><br></td></tr>
+                <tr>
+                    <td align="center">
+                        programmieren in C#: <br>
+                        - mit Unity seit März 2018 <br>
+                        - .NET seit Oktober 2018 in Visual Studio Projekten
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table class="skills">
+                <tr>
+                    <th>Konzeption</th>
+                    <th>Storytelling</th>
+                </tr>
+                <tr>
+                    <td><br><br><img src="images/bulb.png"><br><br></td>
+                    <td><br><br><img src="images/scroll.png"><br><br></td>
+                </tr>
+                <tr>
+                    <td>Konzeption von Spielideen mit <br> Prototypbau in Unity</td>
+                    <td>Geschichten erzählen und <br> Menschen unterhalten</td>
+                </tr>
+                <tr>
+                    <td> <br> </td>
+                    <td> <br> </td>
+                </tr>
+                <tr>
+                    <th>Concept Art</th>
+                    <th>3D-Modelling</th>
+                </tr>
+                <tr>
+                    <td><br><br><img src="images/pencil.png"><br><br></td>
+                    <td><br><br><img src="images/cube.png"><br><br></td>
+                </tr>
+                <tr>
+                    <td>Concept Art in einem <br> unfertigen Scribble-Stil, <br> vorrangig digital</td>
+                    <td>simple Modelle erstellen, <br> hauptsächlich statische Objekte</td>
+                </tr>
+            </table>
+            <br><br><br>
+            <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button> -->
+
+            <h3 class="w3-padding-16 w3-text-light-grey">Programme</h3>
+            <table width="100%">
+                <tr>
+                    <th width="50%"><center>Software</center></th>
+                    <th width="50%"><center>Grafik-/Bildbearbeitung</center></th>
+                </tr>
+
+                <tr>
+                    <td><center>Unity (2018.2.4f1)</center></td>
+                    <td><center>Corel Draw X8</center></td>
+                </tr>
+                <tr>
+                    <td><center>Autodesk 3dsMax (2018)</center></td>
+                    <td><center>Photoshop CS6</center></td>
+                </tr>
+                <tr>
+                    <td><center>Visual Studio (Community 2017)</center></td>
+                    <td><center>Autodesk Mudbox (2018)</center></td>
+                </tr>
+                <tr>
+                    <td><center>Bitbucket</center></td>
+                    <td><center>Autodesk Sketchbook (2018)</center></td>
+                </tr>
+
+                <tr>
+                    <td><center> </center></td>
+                    <td><center> </center></td>
+                </tr>
+            </table>
+            <br>
+            <table width="100%">
+                <tr>
+                    <th width="50%"><center>Sprachen</center></th>
+                    <th width="50%"><center>Betriebsysteme</center></th>
+                </tr>
+                <tr>
+                    <td><center>Deutsch (Muttersprache)</center></td>
+                    <td><center>Linux Ubuntu (16.04)</center></td>
+                </tr>
+
+                <tr>
+                    <td><center>Englisch <br> (allgemeine Kommunikationssicherheit)</center></td>
+                    <td><center>Windows 7</center></td>
+                </tr>
+            </table>
+
+            <!-- Portfolio Section -->
+            <div class="w3-padding-64 w3-content" id="projects">
+                <h2 class="w3-text-light-grey">Meine Projekte</h2>
+                <hr style="width:200px" class="w3-opacity">
+
+                <!-- Grid for project tables -->
+                <div class="w3-row-padding" style="margin:0 -16px">
+
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-dark-grey w3-xlarge w3-padding-32">DANGEROUS WILDNESS</li>
+                            <li class="w3-padding-16">Grundlage: <br>Unity Project in c# <br> Unity Version: 2018.2.4f1</li>
+                            <li class="w3-padding-16"><b>Beschreibung</b><br><br> Dangerous Wildness ist ein Game Prototyp, den ich als mein Zwischenprüfungsprojekt innerhalb von 6-Wochen entwickelt habe.</li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large w3-hover-black">
+                                    <a href="https://github.com/BlackButterfly666/DangerousWildness" target="_blank">Ansehen</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-dark-grey w3-xlarge w3-padding-32">CHOCOLATE CLICKER  </li>
+                            <li class="w3-padding-16">Grundlage: <br>Unity Project in c# <br>2D mit UI Elementen <br> Unity Version: 2018.2.4f1</li>
+                            <li class="w3-padding-16"><b>Beschreibung</b><br><br> Chocolate Clicker ist ein Prototyp, den ich in meiner Freizeit entwickel und mit neuem Wissen immer wieder refactor.</li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large w3-hover-black">
+                                    <a href="https://github.com/BlackButterfly666/Chocolate-Clicker" target="_blank">Ansehen</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-dark-grey w3-xlarge w3-padding-32">DER HELD</li>
+                            <li class="w3-padding-16">Grundlage: <br>Twine</li>
+                            <li class="w3-padding-16">
+                                <b>Beschreibung</b><br><br> Ein Teil einer Geschichte, die ich in Twine erstellt habe.
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large w3-hover-black">
+                                    <a href="http://twinery.org/2/#!/stories/cf3bbe08-3634-445a-8eaa-53c6036ee2be/play" target="_blank"> Ansehen</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-dark-grey w3-xlarge w3-padding-32">TIC TAC TOE</li>
+                            <li class="w3-padding-16">Grundlage: <br>Konsolenapplication mit .NET <br> .NET Framework 4.6.1</li>
+                            <li class="w3-padding-16">
+                                <b>Beschreibung</b><br><br> Eine kleine simple Konsolenapplikation, geschrieben in C#.
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large w3-hover-black">
+                                    <a href="https://github.com/BlackButterfly666/TicTacToe" target="_blank"> Ansehen</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- End Grid/Projekte tables -->
+                </div>
+                <!-- End Portfolio Section -->
+            </div>
+
+            <!-- Contact Section -->
+            <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+                <h2 class="w3-text-light-grey">Kontakt</h2>
+                <hr style="width:200px" class="w3-opacity">
+                <div class="w3-section">
+                    <!-- <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Brandenburg, Brandenburg, Deutschland</p> -->
+                    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Telefon: +49 15142494200</p>
+                    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: annemariebrekow@gmail.com</p>
+                </div><br>
+
+                <!-- End Contact Section -->
+            </div>
+
+            <!-- Footer -->
+            <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+                <i><a:link href="https://www.linkedin.com/in/annemarie-brekow-b90826162/" class="fa fa-linkedin w3-hover-opacity"> </a></i>
+
+                <p class="w3-medium">
+                    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a>
+                    <a href="Imprints.html" class="w3-hover-text-green">Imprints</a>
+                </p>
+                <p class="w3-medium"> </p>
+                <!-- End footer -->
+            </footer>
+            <!-- END PAGE CONTENT -->
+        </div>
+
 </body>
 </html>
-
